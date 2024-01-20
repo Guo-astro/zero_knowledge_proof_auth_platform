@@ -1,5 +1,5 @@
 [workspace]
-members = ["client", "server", "common/zkp_protobuf"]
+members = ["zkp_grpc_client", "zkp_grpc_server", "common/zkp_protobuf"]
 
 [workspace.dependencies]
 rand = "0.8"

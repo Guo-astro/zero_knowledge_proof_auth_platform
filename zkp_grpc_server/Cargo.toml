@@ -1,13 +1,14 @@
 [package]
-name = "server"
+name = "zkp_grpc_server"
 version = "0.1.0"
 edition = "2021"
-
+description = "The server using gRPC for ZKP(Zero Knowledge Proof) using chaum pedersen algorithm"
+license = "MIT OR Apache-2.0"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
 chaum_pedersen_auth = "0.1.0"
-zkp_protobuf = { path = "../common/zkp_protobuf" }
+zkp_protobuf = "0.1.0"
 tonic = { workspace = true }
 prost = { workspace = true }
 num-bigint = { workspace = true }

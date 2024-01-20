@@ -1,5 +1,5 @@
 [package]
-name = "client"
+name = "zkp_grpc_client"
 version = "0.1.0"
 edition = "2021"
 description = "The client using gRPC for ZKP(Zero Knowledge Proof) using chaum pedersen algorithm"
