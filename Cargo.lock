@@ -184,6 +184,14 @@ dependencies = [
 [[package]]
 name = "client"
 version = "0.1.0"
+dependencies = [
+ "chaum_pedersen_auth",
+ "num-bigint",
+ "prost",
+ "tokio",
+ "tonic",
+ "zkp_protobuf",
+]
 
 [[package]]
 name = "either"
