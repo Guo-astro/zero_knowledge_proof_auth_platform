@@ -3,13 +3,11 @@ use std::{collections::HashMap, sync::Mutex};
 use num_bigint::BigUint;
 use tonic::{transport::Server, Code, Request, Response, Status};
 
-use zkp_chaum_pedersen::ZKP;
+use chaum_pedersen_auth::ZKP;
 
-pub mod zkp_auth {
-    include!("../zkp_auth.rs");
-}
+use zkp_protobuf::zkp_protocol;
 
-use zkp_auth::{
+use zkp_protocol::{
     auth_server::{Auth, AuthServer},
     AuthenticationAnswerRequest, AuthenticationAnswerResponse, AuthenticationChallengeRequest,
     AuthenticationChallengeResponse, RegisterRequest, RegisterResponse,

@@ -816,6 +816,11 @@ name = "server"
 version = "0.1.0"
 dependencies = [
  "chaum_pedersen_auth",
+ "num-bigint",
+ "prost",
+ "tokio",
+ "tonic",
+ "zkp_protobuf",
 ]
 
 [[package]]
@@ -1209,7 +1214,6 @@ name = "zkp_protobuf"
 version = "0.1.0"
 dependencies = [
  "prost",
- "tokio",
  "tonic",
  "tonic-build",
 ]

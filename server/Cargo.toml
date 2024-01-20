@@ -7,3 +7,8 @@ edition = "2021"
 
 [dependencies]
 chaum_pedersen_auth = "0.1.0"
+zkp_protobuf = { path = "../common/zkp_protobuf" }
+tonic = { workspace = true }
+prost = { workspace = true }
+num-bigint = { workspace = true }
+tokio = { workspace = true }
