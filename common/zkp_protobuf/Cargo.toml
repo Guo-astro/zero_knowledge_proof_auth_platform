@@ -2,7 +2,8 @@
 name = "zkp_protobuf"
 version = "0.1.0"
 edition = "2021"
-
+description = "The gRPC protocol for ZKP(Zero Knowledge Proof) using chaum pedersen algorithm"
+license = "MIT OR Apache-2.0"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
